@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -e
+
+echo "preparing..."
+
+yum install wget
+yum install containerd
+wget https://github.com/godarch/darch/releases/download/v0.28.0/darch-amd64.tar.gz
+tar -xvf darch-amd64.tar.gz -C /
